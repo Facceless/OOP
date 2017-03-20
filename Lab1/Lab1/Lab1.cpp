@@ -14,14 +14,18 @@ int _tmain(int argc, _TCHAR* argv[])
 	double aNew = 0;
 	double bNew = 0;
 	double dia = 0, S = 0, P = 0;
-	std::cout << "Введите а и в - сторны прямоугольника" << std::endl;
-	std::cin >> r.a;
-	std::cin >> r.b;
+	std::cout << "Введите а и в - стороны прямоугольников" << std::endl;
+		for (int j = 0; j < 2; j++)
+		{
+			std::cout <<"  Сторона   " << j + 1 << std::endl;
+			std::cin >> r.array[j];
+		}
+	std::cout << "Стороны данного прямоугольника=\t" << r.array[0] << " ," << r.array[1];
 	do
 	{
 	     std::cout << " \n\t2 - чтоб изменять стороны \n\t 3 - для вычисления периметра и площади \n\t 4 - для вычисления диагонали \n\t 0 для выхода\n";
 		 std::cin >> menu;
-		 if (menu == 4) std::cout << "Диагональ равна"<<(sqrt(r.Dia()));
+		 if (menu == 4) std::cout << "Диагональ равна"<<r.Dia();
 		 else
 		 {
 			 if (menu == 2) 
@@ -32,13 +36,13 @@ int _tmain(int argc, _TCHAR* argv[])
 				 std::cout << "\tCторону b:";
 				 std::cin >> bNew;
 				 r.Change(aNew,bNew);
-				 std::cout << "\nсторона а=" << r.a << "\tcторона b=" << r.b<<std::endl;
+				 std::cout << "\nсторона а=" << r.array[0] << "\tcторона b=" << r.array[1] << std::endl;
 			 }
 			 else if (menu == 3) 
-			 {   P = r.P();
-			 std::cout << "\nP=" << P;
-			 S = r.Area();
-			 std::cout << "\tS=" << S;
+			 {  P = r.P();
+				std::cout << "\nP=" << P;
+				S = r.Area();
+				std::cout << "\tS=" << S;
 			 }
 		 }
 	} while (menu != 0);
