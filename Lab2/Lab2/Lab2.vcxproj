@@ -79,17 +79,31 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ClInclude Include="Interfaces.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Queue.h" />
     <ClInclude Include="Stack.h" />
     <ClInclude Include="StaticArray.h" />
     <ClInclude Include="StaticDeque.h" />
+=======
+    <ClInclude Include="interface.Container.h" />
+    <ClInclude Include="interface.Deque.h" />
+    <ClInclude Include="interface.IndexedContainer.h" />
+    <ClInclude Include="interface.InsertableContainer.h" />
+    <ClInclude Include="interface.PushPopContainer.h" />
+>>>>>>> 4432440846b423d1a57a0685b81750b2b0a82e16
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lab2.cpp" />
+<<<<<<< HEAD
+=======
+    <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="Queue.cpp" />
+    <ClCompile Include="Stack.cpp" />
+>>>>>>> 4432440846b423d1a57a0685b81750b2b0a82e16
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>

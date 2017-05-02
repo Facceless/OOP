@@ -24,6 +24,7 @@
     <ClInclude Include="targetver.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Interfaces.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
@@ -40,6 +41,21 @@
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
     <ClInclude Include="StaticDeque.h">
+=======
+    <ClInclude Include="interface.Container.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.PushPopContainer.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.Deque.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.IndexedContainer.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.InsertableContainer.h">
+>>>>>>> 4432440846b423d1a57a0685b81750b2b0a82e16
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
@@ -50,5 +66,17 @@
     <ClCompile Include="Lab2.cpp">
       <Filter>Файлы исходного кода</Filter>
     </ClCompile>
+<<<<<<< HEAD
+=======
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Queue.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Stack.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+>>>>>>> 4432440846b423d1a57a0685b81750b2b0a82e16
   </ItemGroup>
 </Project>
